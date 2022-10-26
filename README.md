@@ -8,6 +8,8 @@ This is the note of following course
 
 # File-based routing
 
+![file-based]https://user-images.githubusercontent.com/40550117/198136317-83a72639-5e48-45e8-8df5-2372731bc34e.png
+
 # useRouter
 
 ```javascript

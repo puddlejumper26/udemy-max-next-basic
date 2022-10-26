@@ -29,7 +29,7 @@ export default PortfolioProjectPage;
 - Then if we type [http://localhost:3000/portfolio/something](http://localhost:3000/portfolio/something)
   - it will show these, means
     - something as we input into the url has already been fetched as `projectid`
-      ![Screenshot 2022-10-26 at 16.26.37.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cea0d277-7535-41f1-80c3-c1f7b30e4625/Screenshot_2022-10-26_at_16.26.37.png)
+      ![Screenshot 2022-10-26 at 16.26.37.png](https://user-images.githubusercontent.com/40550117/198136352-786d9147-efc6-4f71-b805-eb6deb871872.png)
   - so it means we could in this component
     - fetch the data with an id of `router.query.projectid`
     - and send a `request` to some BE server
@@ -51,7 +51,7 @@ export default PortfolioProjectPage;
   export default BlogPostsPage;
   ```
 
-  ![Screenshot 2022-10-26 at 17.14.54.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/51fa604d-6238-4c25-9e32-1ae0bc779af9/Screenshot_2022-10-26_at_17.14.54.png)
+  ![Screenshot 2022-10-26 at 17.14.54.png](https://user-images.githubusercontent.com/40550117/198136410-fe68156f-4e83-4854-9ba2-cc92aed1c1b2.png)
 
   - so it has an array instead of just a string,
   - contains `asdwf` and `2` which compose the url
@@ -64,7 +64,7 @@ export default PortfolioProjectPage;
     <a href="/portfolio">Portfolio</a>
   </li>
   ```
-  ![Screenshot 2022-10-26 at 17.22.44.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5c025c42-f963-41fd-88c4-c7a96782a5ab/Screenshot_2022-10-26_at_17.22.44.png)
+  ![Screenshot 2022-10-26 at 17.22.44.png](https://user-images.githubusercontent.com/40550117/198136458-0f67202f-1cd9-4c40-8d52-b8408efb08ae.png)
   - This is working but it sends a `new HTTP request` to load this page, which means if we have any application `state`, it would be lost when `new request` is sending
   # <Link>
 - so we have this `Link` from `Next` to avoid such situation
@@ -80,7 +80,7 @@ export default PortfolioProjectPage;
   - it will `pre-fetch` all data as soon as our mouse is hovering on the link
   - `replace` will make this navigation not going to a new page, but just replace current page
 - check how the `dynamic routing` works
-  ![Screenshot 2022-10-26 at 22.02.59.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/af61c45b-3a0c-4312-805c-297ec4ef6015/Screenshot_2022-10-26_at_22.02.59.png)
+  ![Screenshot 2022-10-26 at 22.02.59.png](https://user-images.githubusercontent.com/40550117/198136503-f0d0acf6-1163-4f9a-8798-d55be0eab00e.png)
   so we could have such code
   ```jsx
   <ul>
@@ -159,4 +159,4 @@ function ClientProjectsPage() {
 - normal react component
 - then next.js will find it automatically
 
-![Screenshot 2022-10-26 at 22.45.32.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9e169e07-82d9-4690-bb6b-16b8e7fa22ef/Screenshot_2022-10-26_at_22.45.32.png)
+![Screenshot 2022-10-26 at 22.45.32.png](https://user-images.githubusercontent.com/40550117/198136559-3e4cdb71-099e-48ed-814d-da1afbd6a565.png)
